@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Scrollable section */
+.scrollable-section {
+    max-height: 95vh; /* Adjust the height as needed */
+    overflow-y: auto;
+    padding-right: 15px; /* Adjust for scrollbar */
+}
+
+#title{
+    text-align: center !important;
+}
+
+button{
+    cursor: pointer;
+    border: 0  !important;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.timeline{
+    list-style-type: none;
+    position: relative;
+    border-left: 3px solid #262626;
+    text-align: justify;
+}
+
+.timeline li{
+    position: relative; /* Ensure each li is positioned relatively */
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.timeline li:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #262626;
+    border-radius: 50%;
+    position: absolute;
+    left: -43px;
+    top: 0;
+    box-shadow: 0 0 0 3px #9c9696;
+}
